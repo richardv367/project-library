@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Voong - Project Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+</head>
+    
+<body>
+    <header>
+    <h1>Project Library</h1>
+</header>
+    <button id="add" class="fade-in"><img src="plus-circle-solid.svg" alt=""> Add a book</button>
+    <!-- <button id="close" class="hidden"></button> -->
+    <div class="form-wrapper display-none hidden">
+        <form action="">
+            <div class="input-container">
+                <label for="title">Title: </label>
+                <input id="title" name="title" type="text">
+            </div>
+            <div class="input-container">
+                <label for="author">Author: </label>
+                <input id="author" name="author" type="text">
+            </div>
+            <div class="input-container">
+                <label for="pages">Pages: </label>
+                <input id="pages" name="pages" type="number">
+            </div>
+            <div class="input-container">
+                <label for="completed">Completed: </label>
+                <input id="completed" name="completed" type="checkbox">
+            </div>
+        </form>
+        <button id="save">Save</button>
+    </div>
+    <table>
+        <tr>
+            <th id="table-head-left">Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Completed</th>
+            <th id="table-head-right">Delete</th>
+        </tr>
+    </table>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
